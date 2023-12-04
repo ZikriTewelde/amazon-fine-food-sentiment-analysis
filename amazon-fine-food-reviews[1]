@@ -1,0 +1,187 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Amazon Fine Food Reviews | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Analyze ~500,000 food reviews from Amazon" />
+  <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="keywords" content="business,internet,restaurants,linguistics" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="EECj72g2cNUbkIOCsiBEeg==" type="text/javascript">
+    window["pageRequestStartTime"] = 1701720327324;
+    window["pageRequestEndTime"] = 1701720327797;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons&display=block"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="EECj72g2cNUbkIOCsiBEeg==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=7ab5aac43193369ca22e" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=571625ccb36e548ec646" />
+  
+    
+ 
+      <script nonce="EECj72g2cNUbkIOCsiBEeg==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="EECj72g2cNUbkIOCsiBEeg==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="EECj72g2cNUbkIOCsiBEeg==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews" />
+    <meta property="og:title" content="Amazon Fine Food Reviews" />
+    <meta property="og:description" content="Analyze ~500,000 food reviews from Amazon" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/18/18/default-backgrounds/dataset-card.jpg" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+            <script nonce="EECj72g2cNUbkIOCsiBEeg==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Amazon Fine Food Reviews","description":"## Context\n\nThis dataset consists of reviews of fine foods from amazon. The data span a period of more than 10 years, including all ~500,000 reviews up to October 2012. Reviews include product and user information, ratings, and a plain text review. It also includes reviews from all other Amazon categories.\n\n\n## Contents\n\n- Reviews.csv: Pulled from the corresponding SQLite table named Reviews in database.sqlite<br>\n- database.sqlite: Contains the table 'Reviews'<br><br>\n\nData includes:<br>\n- Reviews from Oct 1999 - Oct 2012<br>\n- 568,454 reviews<br>\n- 256,059 users<br>\n- 74,258 products<br>\n- 260 users with &gt; 50 reviews<br>\n\n\n[![wordcloud](https://www.kaggle.io/svf/137051/2ba35b1344041b4964fe12365b577999/wordcloud.png)](https://www.kaggle.com/benhamner/d/snap/amazon-fine-food-reviews/reviews-wordcloud)\n\n\n## Acknowledgements\n\nSee [this SQLite query](https://www.kaggle.com/benhamner/d/snap/amazon-fine-food-reviews/data-sample) for a quick sample of the dataset.\n\nIf you publish articles based on this dataset, please cite the following paper:\n\n - J. McAuley and J. Leskovec. [From amateurs to connoisseurs: modeling the evolution of user expertise through online reviews](http://i.stanford.edu/~julian/pdfs/www13.pdf). WWW, 2013.","url":"https://www.kaggle.com/snap/amazon-fine-food-reviews","version":2,"keywords":["subject, people and society, business","subject, science and technology, internet","subject, health and fitness, food, restaurants","subject, people and society, social science, linguistics"],"license":{"@type":"CreativeWork","name":"CC0: Public Domain","url":"https://creativecommons.org/publicdomain/zero/1.0/"},"identifier":["18"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Organization","name":"Stanford Network Analysis Project ","url":"https://www.kaggle.com/organizations/snap","image":"https://storage.googleapis.com/kaggle-organizations/229/thumbnail.jpg?r=730"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews/download?datasetVersionNumber=2","contentSize":"253873708 bytes"}],"commentCount":17,"dateModified":"2017-05-01T18:51:31.49Z","discussionUrl":"https://www.kaggle.com/snap/amazon-fine-food-reviews/discussion","alternateName":"Analyze ~500,000 food reviews from Amazon","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/18/18/default-backgrounds/dataset-card.jpg","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":17},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":167633},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":905835},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":2145}]}</script>
+        
+
+  
+    
+
+  
+    
+
+
+    <script nonce="EECj72g2cNUbkIOCsiBEeg==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="EECj72g2cNUbkIOCsiBEeg==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="EECj72g2cNUbkIOCsiBEeg==" src="/static/assets/runtime.js?v=4c12a40e64001d3f1f7b" data-turbolinks-track="reload"></script>
+  <script nonce="EECj72g2cNUbkIOCsiBEeg==" src="/static/assets/vendor.js?v=6495db0178f667c72ee8" data-turbolinks-track="reload"></script>
+  <script nonce="EECj72g2cNUbkIOCsiBEeg==" src="/static/assets/app.js?v=339f4e2e502a80f9b3e9" data-turbolinks-track="reload"></script>
+    <script nonce="EECj72g2cNUbkIOCsiBEeg==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+<div id="site-container"></div>
+
+<div id="site-body" class="hide">
+    
+
+
+<script nonce="EECj72g2cNUbkIOCsiBEeg==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="EECj72g2cNUbkIOCsiBEeg==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const useProdHosts = ["www.kaggle.com", "admin.kaggle.com"];
+    const subdomain = useProdHosts.includes(window.location.hostname) ? "www" : "staging";
+
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    lib.src = `https://${subdomain}.kaggleusercontent.com/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+</div>
+
+
+
+
+  </main>
+</body>
+
+</html>
