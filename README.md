@@ -1,7 +1,8 @@
 # Sentiment Analysis on Amazon Fine Food Reviews using Vader and Roberta Pretrained Model
 This project delves into the realm of sentiment analysis, exploring the sentiments expressed in Amazon Fine Food Reviews. Leveraging the power of both Vader, a sentiment analysis tool, and the advanced capabilities of the Roberta pretrained model from Hugging Face, the analysis provides nuanced insights into the emotional tone of user reviews. The [Dataset](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews), sourced from Kaggle, serves as the foundation for this exploration. The entire project is meticulously documented and executed within a Jupyter notebook, offering a comprehensive view of the sentiment analysis process. From data preprocessing to model training and evaluation, every step is dissected to unravel the sentiment behind the words in Amazon's fine food reviews.
+
 <p align="center">
-  <img src="sentimentpics/Sentiment1.jpeg" alt="Sentiment1" width="350"/>
+  <img src="sentimentpics/sentiment3.jpeg" alt="Sentiment3" width="350"/>
 </p>
 
 ## Project Overview
@@ -9,7 +10,7 @@ This project delves into the realm of sentiment analysis, exploring the sentimen
 The primary objective of this project is to delve into the sentiments expressed in user reviews of Amazon's fine food products. Leveraging the Vader sentiment analysis tool and a pretrained Roberta model from Hugging Face, we aim to gain comprehensive insights into the emotional tone and subjective feedback present in the reviews.
 
 <p align="center">
-  <img src="sentimentpics/Sentiment1.jpeg" alt="Sentiment1" width="300"/>
+  <img src="sentimentpics/sentiment2.jpeg" alt="Sentiment2" width="300"/>
 </p>
 
 ## Table of Contents
